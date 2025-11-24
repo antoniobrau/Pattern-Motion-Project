@@ -14,7 +14,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # --- Dati pesanti / output ---
-*.avi
+
 *.mp4
 *.mov
 *.mkv
@@ -33,13 +33,14 @@ notebooks/output/
 # Excel e CSV voluminosi
 *.xlsx
 *.xls
-*.csv
 
 # dataset locali
 DATASET*/
 */DATASET*/
 dataset*/
 */dataset*/
+output*/
+*/output*/
 
 # Pattern ricostruiti
 pattern_selezionati_*.csv
