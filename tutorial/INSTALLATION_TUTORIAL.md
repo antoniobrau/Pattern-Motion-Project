@@ -21,7 +21,7 @@ Questa guida descrive come installare e aggiornare il progetto **MotionPattern**
 ### 2. Clonare la repository
 
 ```cmd
-git clone https://github.com/TUO_USERNAME/Pattern-Motion-Project.git
+git clone https://github.com/antoniobrau/Pattern-Motion-Project.git 
 cd Pattern-Motion-Project
 ```
 
@@ -68,7 +68,7 @@ Selezionare il kernel **MotionPattern** nei notebook.
 ### 2. Clonare la repository
 
 ```bash
-git clone https://github.com/TUO_USERNAME/Pattern-Motion-Project.git
+git clone https://github.com/antoniobrau/Pattern-Motion-Project.git
 cd Pattern-Motion-Project
 ```
 
@@ -113,7 +113,7 @@ jupyter lab
 ### 2. Clonare la repository
 
 ```bash
-git clone https://github.com/TUO_USERNAME/Pattern-Motion-Project.git
+git clone https://github.com/antoniobrau/Pattern-Motion-Project.git
 cd Pattern-Motion-Project
 ```
 
