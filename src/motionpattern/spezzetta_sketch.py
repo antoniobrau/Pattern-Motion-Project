@@ -17,6 +17,7 @@ def spezzetta_sketch(
     padding: int = 15,
     codec: str = "FFV1",
     seed: int | None = None,
+    verbouse: int = 0
 ):
     """
     Per ogni video binarizzato e relativo sketch, genera due video spezzettati:
@@ -172,7 +173,8 @@ def spezzetta_sketch(
                 out_bin.write(gray)
                 out_sk.write(gray)
 
-            print(f"OK id={vid_id}, t={t}, bin={bin_path.name}, sk={sk_path.name}")
+            if verbouse > 0:
+                print(f"OK id={vid_id}, t={t}, bin={bin_path.name}, sk={sk_path.name}")
 
         finally:
             if out_bin is not None and out_bin.isOpened():

@@ -10,6 +10,7 @@ def process_static_videos_to_csv(
     skip_frames: int = 0,
     max_frames: int | None = None,
     log_path: str | Path | None = None,
+    verbose: int = 1,     
 ) -> dict:
     """
     Processa tutti i video nella cartella, conta i pattern statici (3×3),
@@ -50,7 +51,8 @@ def process_static_videos_to_csv(
         log_file = None
 
     def log(msg: str):
-        print(msg)
+        if verbose >= 1:
+            print(msg)
         if log_file is not None:
             log_file.write(msg + "\n")
 
