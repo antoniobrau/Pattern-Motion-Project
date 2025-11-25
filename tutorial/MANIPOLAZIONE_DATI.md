@@ -1,6 +1,4 @@
-Ti preparo una versione nuova di `MANIPOLAZIONE_DATI.md` seguendo la struttura che hai descritto.
 
-````markdown
 # 📊 Importare e manipolare i pattern
 
 Questo file spiega:
