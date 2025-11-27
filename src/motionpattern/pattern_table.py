@@ -762,3 +762,28 @@ def add_velocity(table, inplace: bool = True):
     table["Velocity"] = velocity
 
     return table
+
+
+
+
+def is_static(pattern_value: int, TimeFilter: int, SpaceFilter: int) -> bool:
+    """
+    Ritorna True se il pattern (codificato come intero) è statico,
+    cioè se tutti i frame temporali sono identici.
+
+    TimeFilter deve essere > 1.
+    """
+
+    if TimeFilter <= 1:
+        raise ValueError("is_static richiede TimeFilter > 1.")
+
+    n_bits = TimeFilter * (SpaceFilter * SpaceFilter)
+
+    # decodifica coerente con add_velocity
+    b = format(int(pattern_value), f"0{n_bits}b")
+    arr = np.fromiter((1 if ch == "1" else 0 for ch in b),
+                      dtype=np.uint8,
+                      count=n_bits).reshape((TimeFilter, SpaceFilter, SpaceFilter))
+
+    # confronto frame per frame
+    return np.all(arr[1:] == arr[0])
