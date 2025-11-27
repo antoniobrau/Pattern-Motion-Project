@@ -28,8 +28,8 @@ I notebook servono come ambiente eseguibile per provare i blocchi di codice.
 Questa cartella contiene materiale pronto per l’uso:
 
 - due video di esempio (normale + binarizzato)  
-- livelli ottenuti con **Floating Top-k**  (topk.csv)
-- riconteggi reali dei pattern statici e spaziotemporali  (topk_riconteggio)
+- livelli ottenuti con **Floating Top-k** usati nelle analisi (topk.csv)
+- riconteggi reali dei pattern spaziotemporali  (topk_riconteggio.csv)
 - conteggio pattern dalle immagini statiche (Del Viva)  (pattern_statici_DelViva.csv)
 - pattern statici estratti dai video  (frequenze_statici_video.csv)
 
