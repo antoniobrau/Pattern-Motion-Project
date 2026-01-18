@@ -233,7 +233,7 @@ def ImportData(
         # stima di p secondo la formula usata
         data["p"] = (
             PoolSize
-            * np.exp(data["Sum_level"] / data["Count_level"] * (1 - p) - np.euler_gamma)
+            * np.exp(- (data["Sum_level"] / data["Count_level"] - 0.5)* np.log(p) - np.euler_gamma)
             / TotalIterations_h
         )
 
