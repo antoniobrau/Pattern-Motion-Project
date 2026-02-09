@@ -5,6 +5,7 @@ __pycache__/
 *.pyd
 *.egg-info/
 *.egg
+build
 
 # --- VSCode ---
 .vscode/
@@ -41,6 +42,7 @@ dataset*/
 */dataset*/
 output*/
 */output*/
+VIDEO_BINARIZZATI
 
 # Pattern ricostruiti
 pattern_selezionati_*.csv
@@ -58,5 +60,3 @@ pattern_selezionati_*.csv
 .venv
 venv
 
-#dati
-VIDEO_BINARIZZATI
