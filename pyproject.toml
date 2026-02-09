@@ -12,6 +12,7 @@ dependencies = [
     "matplotlib",
     "scikit-image",
     "openpyxl",
+    "ipykernel"
 ]
 
 [tool.setuptools]
