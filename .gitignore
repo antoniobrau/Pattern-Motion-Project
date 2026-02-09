@@ -57,3 +57,6 @@ pattern_selezionati_*.csv
 #venv
 .venv
 venv
+
+#dati
+VIDEO_BINARIZZATI
