@@ -53,3 +53,7 @@ pattern_selezionati_*.csv
 *.zip
 *.tar
 *.gz
+
+#venv
+.venv
+venv
